@@ -96,7 +96,22 @@ const Home = () => {
 					{console.dir(tasks)}
 				
 			</div>
+			 <button type="button" className="btn btn-danger" onClick={()=> {
+             tasks.map((obj) => {
+				let id = obj.id
+				fetch("https://playground.4geeks.com/todo/todos/" + id , {method:"DELETE"})
 
+				.then(()=> {setChange(!change)})
+
+				.then()
+
+				.catch
+			
+			 })
+
+
+
+			 }}>Delete All Tasks</button>
 			<div>
 				
 			</div>
